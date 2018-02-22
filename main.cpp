@@ -7,6 +7,7 @@ int main()
   string list[5]; //array of 5 strings
   int numItems = 0;
   char input;
+  
 
 //while (numItems !=Q || numItems !=q)
 do 
@@ -17,8 +18,22 @@ do
   cout<<"\n (Q)uit";
   cout<<"\nYour choice (A/Q): ";
   cin>>input;
- }
- while (!(input =='Q' || input =='q'));
+if (input == 'a' || input == 'A')
+{
+if (numItems!=5)
+{
+cout<<"What is the item?"<<endl;
+cin>>list[numItems];
+numItems++;
+}
+else
+{
+cout<<"You'll need a bigger list!"<<endl;
+}
+}
+}
+while (!(input =='Q' || input =='q') && numItems !=5);
+
 
   return 0;
 }
