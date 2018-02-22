@@ -32,7 +32,7 @@ cout<<"You'll need a bigger list!"<<endl;
 }
 }
 }
-while (!(input =='Q' || input =='q') && numItems !=5);
+while (!(input =='Q' || input =='q'));
 
 
   return 0;
