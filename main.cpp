@@ -35,7 +35,10 @@ cout<<"You'll need a bigger list!"<<endl;
 }
 }
 while (!(input =='Q' || input =='q'));
-
-
+cout<<"==ITEM TO BUY=="<<endl;
+for (int x=0; x<5; x++)
+{
+cout<<x+1<<" "<<list[x]<<endl;
+}
   return 0;
 }
