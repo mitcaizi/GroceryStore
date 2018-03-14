@@ -39,9 +39,10 @@ int main()
         }
         else
         {
+        cout<<"==ITEMS TO BUY=="<<endl;
                 for (int x=0; x<numItems; x++)
                 {
-                        cout<<newitem[x]<<endl;
+                        cout<<x+1<<" "<<newitem[x]<<endl;
                 }
         }
         return 0;
